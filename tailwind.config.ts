@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+
+import type { Config } from "tailwind-css";
 
 export default {
 	darkMode: ["class"],
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Finance app specific colors
+				finance: {
+					income: '#4ade80',  // Green for income
+					expense: '#f87171', // Red for expenses
+					neutral: '#60a5fa', // Blue for neutral items
+					chart: {
+						blue: '#3b82f6',
+						green: '#10b981',
+						indigo: '#6366f1',
+						purple: '#8b5cf6',
+						pink: '#ec4899',
+					}
 				}
 			},
 			borderRadius: {
