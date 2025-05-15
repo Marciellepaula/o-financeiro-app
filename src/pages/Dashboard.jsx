@@ -1,14 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import useFinances from '@/hooks/useFinances';
 import { AppLayout } from '@/components/layout/AppLayout';
 import { BalanceSummary } from '@/components/dashboard/BalanceSummary';
 import { TransactionsList } from '@/components/transactions/TransactionsList';
-import { TransactionFilters } from '@/components/transactions/TransactionFilters';
 import { TransactionForm } from '@/components/transactions/TransactionForm';
-import { FinanceCharts } from '@/components/dashboard/FinanceCharts';
 import { CategoryManager } from '@/components/categories/CategoryManager';
 import { PdfImporter } from '@/components/import/PdfImporter';
-import useFinances from '@/hooks/useFinances';
-import { exportToCSV } from '@/utils/financeUtils';
 import {
   Dialog,
   DialogContent,

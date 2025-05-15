@@ -9,7 +9,7 @@ import {
   Search,
   ChevronDown,
   X,
-  Upload // Add the Upload icon import
+  Upload 
 } from 'lucide-react';
 
 // Re-export icons with consistent naming
@@ -22,4 +22,4 @@ export const PlusIcon = Plus;
 export const SearchIcon = Search;
 export const ChevronDownIcon = ChevronDown;
 export const CloseIcon = X;
-export const UploadIcon = Upload; // Export the Upload icon
+export const UploadIcon = Upload;
