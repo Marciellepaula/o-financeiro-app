@@ -74,10 +74,16 @@ export function TransactionForm({
   });
 
   const handleSubmit = (data: TransactionFormValues) => {
-    onSubmit({
-      ...data,
+    // Ensure all required fields are present and correctly typed
+    const formattedData: Omit<Transaction, 'id'> = {
+      type: data.type,
+      amount: data.amount,
+      description: data.description,
+      category: data.category,
       date: format(data.date, 'yyyy-MM-dd'),
-    });
+    };
+    
+    onSubmit(formattedData);
     form.reset();
   };
 
